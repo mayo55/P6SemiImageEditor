@@ -83,6 +83,7 @@ StyleCopReport.xml
 *.pgc
 *.pgd
 *.rsp
+!/P6SemiImageEditor/Sources.rsp
 *.sbr
 *.tlb
 *.tli

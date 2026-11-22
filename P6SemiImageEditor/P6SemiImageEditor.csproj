@@ -34,7 +34,6 @@
     <Compile Include="Shared\Palette.cs" />
     <Compile Include="Shared\ImageRendering.cs" />
     <None Include="App.config" />
-    <Content Include="font-atlas.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
