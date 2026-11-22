@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69952A43-387B-4074-8B3F-C114B159AB18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>P6SemiImageEditor</RootNamespace>
+    <AssemblyName>P6SemiImageEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>5</LangVersion>
+    <Optimize Condition=" '$(Configuration)' == 'Release' ">true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="EditorForm.cs" />
+    <Compile Include="Views.cs" />
+    <Compile Include="DotDialog.cs" />
+    <Compile Include="ScreenFrame.cs" />
+    <Compile Include="DisplaySettings.cs" />
+    <Compile Include="SelfTest.cs" />
+    <Compile Include="Shared\FontSet.cs" />
+    <Compile Include="Shared\Palette.cs" />
+    <Compile Include="Shared\ImageRendering.cs" />
+    <None Include="App.config" />
+    <Content Include="font-atlas.png"><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
